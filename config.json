@@ -1,7 +1,7 @@
 {
   "exp_name": "RSICD_DenseNet169",
   "images_dir": "data/RSICD/RSICD_images/",
-  "captions_file": "data/RSICD/dataset.json",
+  "captions_file": "data/RSICD/dataset_rsicd.json",
   "checkpoints_path": "checkpoints/",
   "vocabulary_path": "vocab.txt",
   "results_file": "results/RSICD_DenseNet169.json",
