@@ -4,11 +4,13 @@
   "captions_file": "data/RSICD/dataset_rsicd.json",
   "checkpoints_path": "checkpoints/",
   "vocabulary_path": "vocab.txt",
+  //"emb_dim": 128,
   "results_file": "results/RSICD_DenseNet169.json",
   "embed_model": "densenet169",
   "summarization_model_path": "0120000.tar",
   "decoder_lr": 0.001,
-  "batch_size": 384,
+  "batch_size": 64,
+  //"batch_size": 384,
   "print_freq": 1,
   "epochs": 150
 }
