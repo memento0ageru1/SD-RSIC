@@ -27,6 +27,7 @@ class Tester(object):
         filenames = []
 
         for img_ids, imgs, _, _ in self.test_loader:
+            print(imgs)
             imgs = imgs.to(self.config.device)
 
             imgs = self.state.encoder(imgs)
