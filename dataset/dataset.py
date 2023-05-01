@@ -60,8 +60,8 @@ class CaptioningDataset(Dataset):
                 if example['img_id'] == id:
                     filepath = example['image_path']
                     break
-            print(filepath)
             filepaths.append(filepath)
+        
         return filepaths
     ###
 
