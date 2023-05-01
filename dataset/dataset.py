@@ -55,8 +55,7 @@ class CaptioningDataset(Dataset):
         for example in self.examples:
             if example['img_id'] == img_id
                 filepath = example['image_path']
-        
-        return filepath
+                return filepath
     ###
 
     def __prepare_examples(self, root, caption_file):
