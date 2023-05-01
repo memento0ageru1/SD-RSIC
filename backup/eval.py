@@ -22,7 +22,7 @@ def evaluate(config_file):
 
     references_index = tester.dataset.fetch_sentences()
 
-    img_ids, img_paths, predictions, references = tester.step(beam_size=4, return_results=True)
+    img_ids, predictions, references = tester.step(beam_size=4, return_results=True)
 
     weights = [
         (1.0, 0.0, 0.0, 0.0),
@@ -40,7 +40,7 @@ def evaluate(config_file):
 
     results = []
 
-    for img_id, img_path, prediction, tokenized_ref in zip(img_ids, img_paths, predictions, references):
+    for img_id, prediction, tokenized_ref in zip(img_ids, predictions, references):
         img_bleus = [
             corpus_bleu([tokenized_ref], [prediction],
                         weights=weight, smoothing_function=smoothing_function)
@@ -49,7 +49,6 @@ def evaluate(config_file):
 
         results.append({
             'img_id': img_id,
-            'ima_path': img_path,
             'prediction': ids_to_sentence(vocab, prediction),
             'bleu_scores': img_bleus,
             'references': references_index[img_id]

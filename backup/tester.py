@@ -24,7 +24,6 @@ class Tester(object):
         predictions = []
         references = []
         all_img_ids = []
-        filenames = []
 
         for img_ids, imgs, _, _ in self.test_loader:
             imgs = imgs.to(self.config.device)
@@ -87,7 +86,6 @@ class Tester(object):
                 predictions.append(beam_group.best_sentence())
 
             references.extend(self.dataset.fetch_references(img_ids))
-            filenames.extend(self.dataset.fetch_imgname(img_ids))
             all_img_ids.extend(img_ids)
 
         smoothing_function = SmoothingFunction().method1
@@ -95,7 +93,7 @@ class Tester(object):
                             weights=self.bleu_weights)
 
         if return_results:
-            return all_img_ids, filenames, predictions, references
+            return all_img_ids, predictions, references
 
         template = '\n * BEAM SEARCH TESTING - BLEU-4 - {bleu}\n'
         print(template.format(bleu=bleu4))

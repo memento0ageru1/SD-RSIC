@@ -48,6 +48,16 @@ class CaptioningDataset(Dataset):
             index[example['img_id']].append(sentence)
 
         return index
+        
+    ##new:获取img_name
+    def fetch_imgname(self, img_id):
+    
+        for example in self.examples:
+            if example['img_id'] == img_id
+                filepath = example['image_path']
+        
+        return filepath
+    ###
 
     def __prepare_examples(self, root, caption_file):
         tokenizer = nltk.tokenize.TreebankWordTokenizer()
