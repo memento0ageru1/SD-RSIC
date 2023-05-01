@@ -53,7 +53,7 @@ class CaptioningDataset(Dataset):
     def fetch_imgname(self, img_id):
     
         for example in self.examples:
-            if example['img_id'] == img_id
+            if example['img_id'] == img_id:
                 filepath = example['image_path']
                 return filepath
     ###
