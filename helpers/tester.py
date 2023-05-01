@@ -27,7 +27,6 @@ class Tester(object):
         filenames = []
 
         for img_ids, imgs, _, _ in self.test_loader:
-            print(imgs)
             imgs = imgs.to(self.config.device)
 
             imgs = self.state.encoder(imgs)
@@ -88,7 +87,7 @@ class Tester(object):
                 predictions.append(beam_group.best_sentence())
 
             references.extend(self.dataset.fetch_references(img_ids))
-            filenames.append(self.dataset.fetch_imgname(img_ids))
+            filenames.extend(self.dataset.fetch_imgname(img_ids))
             all_img_ids.extend(img_ids)
 
         smoothing_function = SmoothingFunction().method1
