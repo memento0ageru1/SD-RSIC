@@ -55,7 +55,6 @@ class CaptioningDataset(Dataset):
         filepaths = []
     
         for id in img_id:
-            print(id)
             for example in self.examples:
                 if example['img_id'] == id:
                     filepath = example['image_path']
