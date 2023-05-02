@@ -3,7 +3,7 @@ from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader
 
 class CaptioningDataLoader(DataLoader):
-    def __init__(self, dataset, batch_size=128, shuffle=True, num_workers=0):
+    def __init__(self, dataset, batch_size=128, shuffle=True, num_workers=2):
         self.pad_value = dataset.vocab('<pad>')
         super(CaptioningDataLoader,self).__init__(dataset=dataset, pin_memory=True, batch_size=batch_size, shuffle=shuffle, num_workers=10, collate_fn=self.__collate_fn)
     ##original dataloader num_workers=2
