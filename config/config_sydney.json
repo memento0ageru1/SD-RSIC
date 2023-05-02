@@ -8,7 +8,7 @@
   "embed_model": "densenet169",
   "summarization_model_path": "0120000.tar",
   "decoder_lr": 0.001,
-  "batch_size": 64,
+  "batch_size": 32, //原本设置为384，修改为64内存依旧不足，最后修改成32，但是依旧没跑到10个epoch就断了
   "print_freq": 1,
   "epochs": 50
 }
