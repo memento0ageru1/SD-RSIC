@@ -8,7 +8,7 @@
   "embed_model": "densenet169",
   "summarization_model_path": "0120000.tar",
   "decoder_lr": 0.001,
-  "batch_size": 32,
+  "batch_size": 16,
   "print_freq": 1,
   "epochs": 50
 }
