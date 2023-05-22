@@ -61,7 +61,7 @@
       $('#results').html('');
       for (var i = 0; i < data.length; i++) {
 	  <!--这是一个注释，注释在浏览器中不会显示var path = 'imgs/img' + (i + 1) + '.jpg';-->
-        var path = data[i].img_path;
+        var path = '..//'+data[i].img_path;
         $('<div class="result">')
           .data('image', path)
           .append($('<p>').text(data[i].prediction))
