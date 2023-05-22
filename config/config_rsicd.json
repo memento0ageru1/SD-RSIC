@@ -10,7 +10,7 @@
   "decoder_lr": 0.001,
   "batch_size": 384,
   "print_freq": 1,
-  "epochs": 150
+  "epochs": 50
 }
 
 {
