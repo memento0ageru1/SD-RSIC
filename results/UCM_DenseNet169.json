@@ -1,0 +1,1 @@
+[{"epoch": 0, "experiment": "UCM_DenseNet169", "train_loss": 3.510578360543713, "bleu4": 0.573048788506013}, {"epoch": 1, "experiment": "UCM_DenseNet169", "train_loss": 1.1206811918103534, "bleu4": 0.6739908892289683}, {"epoch": 2, "experiment": "UCM_DenseNet169", "train_loss": 0.761155137917257, "bleu4": 0.6886858307049052}]
