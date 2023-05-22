@@ -1,15 +1,14 @@
 {
-  "exp_name": "UCM_DenseNet169",
-  "images_dir": "data/UCM_captions/imgs/",
-  "captions_file": "data/UCM_captions/dataset.json",
+  "exp_name": "Sydney_DenseNet169",
+  "images_dir": "data/Sydney_captions/imgs/",
+  "captions_file": "data/Sydney_captions/dataset.json",
   "checkpoints_path": "checkpoints/",
   "vocabulary_path": "vocab.txt",
-  "results_file": "results/UCM_DenseNet169.json",
+  "results_file": "results/Sydney_DenseNet169.json",
   "embed_model": "densenet169",
   "summarization_model_path": "0120000.tar",
   "decoder_lr": 0.001,
-  "batch_size": 32,
+  "batch_size": 64,
   "print_freq": 1,
   "epochs": 50
 }
-
