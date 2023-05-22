@@ -49,7 +49,7 @@ def evaluate(config_file):
 
         results.append({
             'img_id': img_id,
-            'ima_path': img_path,
+            'imag_path': img_path,
             'prediction': ids_to_sentence(vocab, prediction),
             'bleu_scores': img_bleus,
             'references': references_index[img_id]
