@@ -1,0 +1,5 @@
+node_modules
+
+data/RSICD/RSICD_images/*
+data/Sydney_captions/imgs/*
+data/UCM_captions/imgs/*
