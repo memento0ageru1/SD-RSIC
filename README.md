@@ -1,24 +1,8 @@
-# SD-RSIC: Summarization Driven Deep Remote Sensing Image Captioning
-This repository contains code of the paper `SD-RSIC: Summarization Driven Deep Remote Sensing Image Captioning` accepted at IEEE Transactions on Geoscience and Remote Sensing. 
-This work has been done at the [Remote Sensing Image Analysis group](https://www.rsim.tu-berlin.de/menue/remote_sensing_image_analysis_group/) by 
-[Gencer Sumbul](http://www.user.tu-berlin.de/gencersumbul/), Sonali Nayak and [Begüm Demir](https://begumdemir.com/).
+# 基于机器学习的遥感图像描述即可视化
 
-If you use this code, please cite our paper given below:
+* 参考论文：[SD-RSIC: Summarization Driven Deep Remote Sensing Image Captioning](https://arxiv.org/abs/2006.08432)
+* 参考代码：[SD RSIC](https://git.tu-berlin.de/rsim/SD-RSIC/-/tree/master/) by G. Sumbul, S. Nayak and B. Demіr. 
 
-> G. Sumbul, S. Nayak and B. Demіr, "[SD-RSIC: Summarization Driven Deep Remote Sensing Image Captioning](https://arxiv.org/abs/2006.08432)", IEEE Transactions on Geoscience and Remote Sensing, vol. 59, no. 8, pp. 6922-6934, 2021, doi: 10.1109/TGRS.2020.3031111.
-
-```
-@article{SD-RSIC,
-  author={G. {Sumbul} and S. {Nayak} and B. {Demіr}},
-  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={SD-RSIC: Summarization Driven Deep Remote Sensing Image Captioning}, 
-  year={2021},
-  volume={59},
-  number={8},
-  pages={6922-6934},
-  doi={10.1109/TGRS.2020.3031111}}
-}
-```
 
 ![](figure.png)
 
@@ -60,36 +44,3 @@ tqdm 4.36.1, NLTK 3.5 and Ubuntu 18.04.3.
 * `checkpoints_path`: The directory path where the model checkpoint will be searched.
 * `results_file`: The JSON file path where the resulting image captions will be saved. The suffix of '_test' will be added to the filename.
 
-## Authors
-**Gencer Sümbül**
-http://www.user.tu-berlin.de/gencersumbul/
-
-**Sonali Nayak**
-
-## License
-The code in this repository to facilitate the use of the `SD-RSIC: Summarization Driven Deep Remote Sensing Image Captioning` is licensed under the **MIT License**:
-
-```
-MIT License
-
-Copyright (c) 2020 The Authors of The Paper, "SD-RSIC: Summarization Driven Deep 
-Remote Sensing Image Captioning"
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
