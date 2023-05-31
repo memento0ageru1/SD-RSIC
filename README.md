@@ -44,3 +44,6 @@ tqdm 4.36.1, NLTK 3.5 and Ubuntu 18.04.3.
 * `checkpoints_path`: The directory path where the model checkpoint will be searched.
 * `results_file`: The JSON file path where the resulting image captions will be saved. The suffix of '_test' will be added to the filename.
 
+
+## 使用方法
+参考另一个readme
